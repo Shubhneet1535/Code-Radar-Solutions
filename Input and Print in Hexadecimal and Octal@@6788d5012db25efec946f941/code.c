@@ -2,7 +2,7 @@
 int main() {
     int num;
     scanf("%d",&num);
-    printf("Hexadecimal: h%",num);
-    printf("octal: o%",num);
+    printf("Hexadecimal: On%n",num);
+    printf("octal: O%o",num);
     return 0;
 }
