@@ -2,7 +2,7 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-    A=((a&~(1<<b))!=0);
-    printf("%d",A);
+    a=a&~(1<<b);
+    printf("%d",);
     return 0;
 }
