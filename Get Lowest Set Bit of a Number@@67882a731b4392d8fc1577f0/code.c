@@ -12,5 +12,5 @@ int main() {
         pos++;
     }
     printf("%d",pos);
-    return0;
+    return 0;
 }
