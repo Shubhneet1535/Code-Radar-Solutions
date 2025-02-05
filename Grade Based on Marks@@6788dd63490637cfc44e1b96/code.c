@@ -12,10 +12,10 @@ int main() {
         printf("%d",C);
     }
     else if(num>=60){
-        printf("%d",D)
+        printf("%d",D);
     }   
     else{
-        printf("%d",F)
+        printf("%d",F);
     }
     return 0;
 }
