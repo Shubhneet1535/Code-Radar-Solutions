@@ -5,7 +5,7 @@ int main() {
     if num==0{
         printf("Even");}
     while{
-        printf("Odd"):
+        printf("Odd");
     }    
     return 0;
 }
