@@ -8,7 +8,7 @@ int main() {
     else if(b>c>a){
         printf("%d",b);
     }
-    else{
+    else(c>a>b){
         printf("%d",c);
     }   
     return 0;
