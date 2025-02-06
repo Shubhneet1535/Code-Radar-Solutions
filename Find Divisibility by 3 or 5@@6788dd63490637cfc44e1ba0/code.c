@@ -12,7 +12,7 @@ int main() {
         printf("Divisible by 5");
     }
     else{
-        Not Divisible
+        ("Not Divisible");
     }
     return 0;
 }
