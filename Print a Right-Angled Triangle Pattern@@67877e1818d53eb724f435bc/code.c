@@ -3,9 +3,9 @@ int main()
 {
     int i,j,rows;
     scanf("%d",&rows);
-    for(i=1;i>0;i--)
+    for(i=0;i<rows;i++)
     {
-        for(j=rows;j>0;j--)
+        for(j=0;j<=0;j++)
         {
             printf("* ");
         }
