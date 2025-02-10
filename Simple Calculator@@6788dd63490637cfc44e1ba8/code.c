@@ -6,23 +6,21 @@ int main() {
     scanf("%c",&operator);
     switch(operator){
         case '+':
-             printf("%d+%d=%d",a,b,a+b);
+             printf("%d+%d=%d",a,operator,b,a+b);
              break;
         case '-':
-             printf("%d-%d=%d",a,b,a-b);
+             printf("%d-%d=%d",a,operator,b,a-b);
              break;
         case '*':
-             printf("%d*%d=%d",a,b,a*b);
+             printf("%d*%d=%d",a,operator,b,a*b);
              break;
         case '/':
             if(b!=0){
-                printf("%d/%d=%d",a,b,a/b);
+                printf("%d/%d=%d",a,operator,b,a/b);
             } else{
                 printf("Error");
             }  
-            break;   
-        default:
-           printf("Invalid month");
+            break;
     }
     return 0;
 }
