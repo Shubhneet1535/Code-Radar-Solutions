@@ -6,10 +6,10 @@ int main() {
     scanf("%c",&operator);
     switch(operator){
         case '+':
-             printf("%d+%d=%d",a,operator,b,a+b);
+             printf("%d%c%d=%d",a,operator,b,a+b);
              break;
         case '-':
-             printf("%d-%d=%d",a,operator,b,a-b);
+             printf("%d%c%d=%d",a,operator,b,a-b);
              break;
         case '*':
              printf("%d*%d=%d",a,operator,b,a*b);
