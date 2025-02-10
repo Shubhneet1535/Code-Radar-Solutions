@@ -1,12 +1,25 @@
 #include <stdio.h>
-int main() {
-    int a;
-    scanf("%d",&a);
-    if (a>'1'&&a%a=='0'){
-        printf("prime");
+#include <stdbool.h>
+
+bool isPrime(int num) {
+    if (num <= 1) {
+        return false;
     }
-    else{
-        printf("Not Prime");
+    for (int i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int number;
+    scanf("%d", &number);
+    if (isPrime(number)) {
+        printf("Prime\n");
+    } else {
+        printf("Not Prime\n");
     }
     return 0;
 }
