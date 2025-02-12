@@ -1,25 +1,22 @@
-#include <stdio.h>
-int main() {
-    int a,b;
-    char operator;
-    scanf("%d %d %c",&a,&b,&operator);
-    switch(operator){
-        case '+':
-             printf("%d%c%d=%d",a,operator,b,a+b);
-             break;
-        case '-':
-             printf("%d%c%d=%d",a,operator,b,a-b);
-             break;
-        case '*':
-             printf("%d*%d=%d",a,operator,b,a*b);
-             break;
-        case '/':
-            if(b!=0){
-                printf("%d/%d=%d",a,operator,b,a/b);
-            } else{
-                printf("Error");
-            }  
-            break;
+#include<stdio.h>
+int main(){
+    int x,y;
+    char o;
+    scanf("%d %d %c", &x, &y, &o);
+    if(o == '+'){
+        int op = x + y;
+        printf("%d", op);}
+    else if(o == '-'){
+        int op = x - y;
+        printf("%d",op);}
+    else if(o == '*'){
+        int op = x * y;
+        printf("%d",op);}
+    else if(o == '/'){
+        if(y==0){printf("error");}
+        else{
+            int op = x / y;
+            printf("%d",op);}
     }
     return 0;
 }
