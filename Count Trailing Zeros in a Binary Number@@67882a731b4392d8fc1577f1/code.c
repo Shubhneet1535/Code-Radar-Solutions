@@ -9,8 +9,8 @@ int countTrailingZeros(int n) {
 }
 int main() {
     int num;
-    printf("Enter an integer: ");
+    printf("");
     scanf("%d", &num);
-    printf("Output: %d\n", countTrailingZeros(num));
+    printf("%d\n", countTrailingZeros(num));
     return 0;
 }
