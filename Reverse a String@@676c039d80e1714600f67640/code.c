@@ -12,9 +12,9 @@ void reverseString(char *str) {
 }
 int main() {
     char str[100];
-    printf("Enter a string: ");
+    printf("");
     scanf("%s", str);
     reverseString(str);
-    printf("Reversed string: %s\n", str);
+    printf("%s\n", str);
     return 0;
 }
