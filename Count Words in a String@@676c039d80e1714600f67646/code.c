@@ -3,7 +3,7 @@
 int main() {
     char str[1000];
     int count = 0, i;
-    printf("Enter a string: ");
+    printf("");
     fgets(str, sizeof(str), stdin);
     for (i = 0; str[i] != '\0'; i++) {
         if (str[i] == ' ') {
