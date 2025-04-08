@@ -7,12 +7,12 @@ struct Student {
 };
 int main() {
     int n, i;
-    printf("Enter the number of students: ");
+    printf("");
     scanf("%d", &n);
     getchar(); 
     struct Student students;
     for (i = 0; i < n; i++) {
-        printf("Enter roll number, name, and marks for student %d (separated by spaces): ", i + 1);
+        printf("", i + 1);
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
     struct Student top_scorer = students[0];
