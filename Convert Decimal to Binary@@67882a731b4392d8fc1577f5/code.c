@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     int decimal_num, binary_num[32], i = 0;
-    printf("Enter a decimal number: ");
+    printf("");
     scanf("%d", &decimal_num);
     if (decimal_num < 0) {
         printf("Please enter a non-negative integer.\n");
@@ -15,7 +15,7 @@ int main() {
     if (i == 0) {
         printf("Binary representation: 0\n");
     } else {
-        printf("Binary representation: ");
+        printf("");
         for (int j = i - 1; j >= 0; j--) {
             printf("%d", binary_num[j]);
         }
