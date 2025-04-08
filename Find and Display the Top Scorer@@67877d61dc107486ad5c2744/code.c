@@ -13,7 +13,7 @@ int main() {
     struct Student students;
     for (i = 0; i < n; i++) {
         printf("", i + 1);
-        scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
+        scanf("%d %s %f", &students[i].roll_number &students[i].name &students[i].marks);
     }
     struct Student top_scorer = students[0];
     for (i = 1; i < n; i++) {
