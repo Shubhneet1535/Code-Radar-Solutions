@@ -7,7 +7,7 @@ typedef struct {
 } Student;
 int main() {
     int n;
-    printf("Enter the number of students: ");
+    printf("");
     scanf("%d", &n);
     Student* students = (Student*)malloc(n * sizeof(Student));
     for (int i = 0; i < n; i++) {
