@@ -11,10 +11,10 @@ void removeSpaces(char *str) {
 }
 int main() {
     char str[100];
-    printf("Enter a string: ");
+    printf("");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = 0;
     removeSpaces(str);
-    printf("String with spaces removed: %s\n", str);
+    printf("%s\n", str);
     return 0;
 }
