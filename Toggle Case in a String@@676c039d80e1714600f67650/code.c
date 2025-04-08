@@ -3,7 +3,7 @@
 int main() {
     char str[100];
     int i = 0;
-    printf("Enter a string: ");
+    printf("");
     fgets(str, sizeof(str), stdin);
     while (str[i] != '\0') {
         if (islower(str[i])) {
@@ -13,6 +13,6 @@ int main() {
         }
         i++;
     }
-    printf("Output: %s", str);
+    printf("%s", str);
     return 0;
 }
