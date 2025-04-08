@@ -1,15 +1,21 @@
 #include <stdio.h>
 #include <string.h>
 int main() {
-    char s[200];
+    char str[1000];
     int count = 0, i;
-    printf("Enter the string\n");
-    gets(s);
-    for (i = 0; i < strlen(s); i++) {
-        if (s[i] == ' ') {
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    for (i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ') {
             count++;
         }
     }
-    printf("Number of words in given string are: %d\n", count + 1);
+    if (strlen(str) > 0 && str[strlen(str) - 1] == '\n') {
+         str[strlen(str) - 1] = '\0';
+    }
+    if(strlen(str) > 0) {
+        count++;
+    }
+    printf("Number of words: %d\n", count);
     return 0;
 }
