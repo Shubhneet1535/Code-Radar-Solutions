@@ -11,7 +11,7 @@ void reverse_string(char *str) {
 }
 int main() {
     char input_string[1000];
-    printf("Enter a string: ");
+    printf("");
     fgets(input_string, sizeof(input_string), stdin);
     input_string[strcspn(input_string, "\n")] = 0; 
     char *token = strtok(input_string, " ");
