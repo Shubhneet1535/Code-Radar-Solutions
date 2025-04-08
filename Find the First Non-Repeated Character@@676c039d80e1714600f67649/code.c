@@ -16,9 +16,9 @@ char findFirstNonRepeatingCharacter(const char *str) {
 }
 int main() {
     char inputString[1000];
-    printf("Enter a string: ");
+    printf("");
     scanf("%s", inputString);
     char result = findFirstNonRepeatingCharacter(inputString);
-    printf("Output: %c\n", result);
+    printf("%c\n", result);
     return 0;
 }
