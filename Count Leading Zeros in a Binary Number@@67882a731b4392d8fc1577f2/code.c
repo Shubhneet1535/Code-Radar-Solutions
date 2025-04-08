@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main() {
     unsigned int num;
-    printf("Enter an integer: ");
+    printf("");
     scanf("%u", &num);
     int count = 0;
     for (int i = 31; i >= 0; i--) {
