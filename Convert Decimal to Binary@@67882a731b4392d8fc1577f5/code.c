@@ -13,7 +13,7 @@ int main() {
         i++;
     }
     if (i == 0) {
-        printf("Binary representation: 0\n");
+        printf("0\n");
     } else {
         printf("");
         for (int j = i - 1; j >= 0; j--) {
