@@ -11,10 +11,10 @@ int main() {
     scanf("%d", &n);
     Student* students = (Student*)malloc(n * sizeof(Student));
     for (int i = 0; i < n; i++) {
-        printf("Enter details for student %d (roll_number name marks): ", i + 1);
+        printf("", i + 1);
         scanf("%d %s %f", &students[i].roll_number, students[i].name, &students[i].marks);
     }
-    printf("\nStudent Details:\n");
+    printf("\n");
     for (int i = 0; i < n; i++) {
         printf("Roll Number: %d, Name: %s, Marks: %.2f\n", students[i].roll_number, students[i].name, students[i].marks);
     }
