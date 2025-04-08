@@ -1,10 +1,16 @@
 #include <stdio.h>
+void checkMSB(int num) {
+    if (num & (1 << 31)) {
+        printf("Set \n");
+    } else {
+        printf("Not Set \n");
+    }
+}
 int main() {
-    int a;
-    scanf("%d",&a);
-    if (a&1&8){
-    printf("Set");}
-    else{
-    printf("Not Set");}
+    int num;
+    scanf("%d", &num);
+    
+    checkMSB(num);
+
     return 0;
 }
