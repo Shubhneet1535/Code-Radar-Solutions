@@ -10,6 +10,6 @@ int main() {
         }
         count++;
     }
-    printf("Output: %d\n", count);
+    printf("%d\n", count);
     return 0;
 }
