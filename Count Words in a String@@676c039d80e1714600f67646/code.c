@@ -16,6 +16,6 @@ int main() {
     if(strlen(str) > 0) {
         count++;
     }
-    printf("Number of words: %d\n", count);
+    printf("%d\n", count);
     return 0;
 }
