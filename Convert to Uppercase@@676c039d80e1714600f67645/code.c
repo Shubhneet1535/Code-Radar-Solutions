@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    char str[];
+    char str[555];
     int i = 0;
     printf("");
     scanf("%s", str);
