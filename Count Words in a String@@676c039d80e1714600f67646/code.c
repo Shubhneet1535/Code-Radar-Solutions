@@ -1,21 +1,25 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
-    char str[1000];
-    int count = 0, i;
-    printf("");
-    fgets(str, sizeof(str), stdin);
-    for (i = 0; str[i] != '\0'; i++) {
+int countWords(char *str) {
+    int count = 0;
+    int i = 0;
+    int inWord = 0;
+    while (str[i] != '\0') {
         if (str[i] == ' ') {
+            inWord = 0;
+        } else if (inWord == 0) {
+            inWord = 1;
             count++;
         }
+        i++;
     }
-    if (strlen(str) > 0 && str[strlen(str) - 1] == '\n') {
-         str[strlen(str) - 1] = '\0';
-    }
-    if(strlen(str) > 0) {
-        count++;
-    }
-    printf("%d\n", count);
+    return count;
+}
+int main() {
+    char str[100];
+    printf("\n");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = 0;
+    printf("\n%d\n", countWords(str));
     return 0;
 }
