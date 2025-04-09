@@ -20,6 +20,6 @@ int main() {
     fgets(inputString, sizeof(inputString), stdin);
     inputString[strcspn(inputString, "\n")] = 0;
     removeConsonants(inputString);
-    printf("\n", inputString);
+    printf("%s\n", inputString);
     return 0;
 }
