@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
+#include <limits.h>
 int main() {
-    char str[100];
-    char replaceChar;
-    int i;
-    printf("");
+    char str[1000];
     fgets(str, sizeof(str), stdin);
-    str[strcspn(str, "\n")] = 0; 
-    printf("");
-    scanf(" %c", &replaceChar);
-    for (i = 0; str[i] != '\0'; i++) {
-        char lowerChar = tolower(str[i]);
-        if (lowerChar == 'a' || lowerChar == 'e' || lowerChar == 'i' || lowerChar == 'o' || lowerChar == 'u') {
-            str[i] = replaceChar;
+    char *word;
+    char *shortest_word = "";
+    int min_length = INT_MAX;
+    word = strtok(str, " \n");
+    while (word != NULL) {
+        int len = strlen(word);
+        if (len < min_length) {
+            min_length = len;
+            shortest_word = word;
         }
+        word = strtok(NULL, " \n");
     }
-    printf("%s\n", str);
+    printf("%s\n", shortest_word);
     return 0;
 }
