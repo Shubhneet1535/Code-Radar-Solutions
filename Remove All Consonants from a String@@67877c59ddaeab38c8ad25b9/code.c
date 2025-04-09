@@ -16,7 +16,7 @@ void removeConsonants(char *str) {
 }
 int main() {
     char inputString[1000];
-    printf("\n");
+    printf("");
     fgets(inputString, sizeof(inputString), stdin);
     inputString[strcspn(inputString, "\n")] = 0;
     removeConsonants(inputString);
