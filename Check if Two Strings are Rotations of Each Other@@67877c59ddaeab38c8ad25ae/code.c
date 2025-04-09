@@ -21,9 +21,9 @@ int areRotations(char *str1, char *str2) {
 }
 int main() {
     char str1[100], str2[100];
-    printf("Enter the first string: ");
+    printf("");
     scanf("%s", str1);
-    printf("Enter the second string: ");
+    printf("");
     scanf("%s", str2);
     if (areRotations(str1, str2))
         printf("Yes\n");
