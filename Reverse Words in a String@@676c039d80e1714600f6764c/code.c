@@ -1,22 +1,26 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-void reverse_string(char *str) {
-    int len = strlen(str);
+
+void reverse_word(char *word) {
+    int len = strlen(word);
     for (int i = 0, j = len - 1; i < j; i++, j--) {
-        char temp = str[i];
-        str[i] = str[j];
-        str[j] = temp;
+        char temp = word[i];
+        word[i] = word[j];
+        word[j] = temp;
     }
 }
+
 int main() {
-    char input_string[1000];
-    printf("");
-    fgets(input_string, sizeof(input_string), stdin);
-    input_string[strcspn(input_string, "\n")] = 0; 
-    char *token = strtok(input_string, " ");
+    char str[1000];
+    printf("\n");
+    fgets(str, sizeof(str), stdin);
+    str[strcspn(str, "\n")] = 0;
+
+    printf("\n");
+    char *token = strtok(str, " ");
     while (token != NULL) {
-        reverse_string(token);
+        reverse_word(token);
         printf("%s ", token);
         token = strtok(NULL, " ");
     }
