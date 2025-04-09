@@ -5,10 +5,10 @@ int main() {
     char str[100];
     char replaceChar;
     int i;
-    printf("Enter the string: ");
+    printf("");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = 0; 
-    printf("Enter the character to replace vowels: ");
+    printf("");
     scanf(" %c", &replaceChar);
     for (i = 0; str[i] != '\0'; i++) {
         char lowerChar = tolower(str[i]);
@@ -16,6 +16,6 @@ int main() {
             str[i] = replaceChar;
         }
     }
-    printf("Modified string: %s\n", str);
+    printf("%s\n", str);
     return 0;
 }
