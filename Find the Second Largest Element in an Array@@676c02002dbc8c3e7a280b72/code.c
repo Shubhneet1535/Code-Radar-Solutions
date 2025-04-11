@@ -1,9 +1,9 @@
 #include <stdio.h>
 int main() {
-    int N, i, largest, second_largest;
+    int N, largest, second_largest;
     scanf("%d", &N);
-    int arr;
-    for (i = 0; i < N; i++) {
+    int arr[N];
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]);
     }
     if (N < 2) {
@@ -17,7 +17,7 @@ int main() {
         largest = arr[1];
         second_largest = arr[0];
     }
-    for (i = 2; i < N; i++) {
+    for (int i = 2; i < N; i++) {
         if (arr[i] > largest) {
             second_largest = largest;
             largest = arr[i];
