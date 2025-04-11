@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <limits.h>
 int main() {
-    int n, i;
+    int n;
     scanf("%d", &n);
-    int arr;
-    for (i = 0; i < n; i++) {
+    int arr[n];
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     int min = INT_MAX, max = INT_MIN;
